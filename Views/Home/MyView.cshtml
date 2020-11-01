@@ -9,14 +9,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>MyView</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
-    <div>
-        @ViewBag.Greeting World (frome the view)
-        <p>Мы идем на вечеринку. <br />
-        (To Do: sell is better. Add pics or something.)
-        <p/>
-        <a asp-action="RsvpForm">RSVP Now</a>
+    <div class="text-center">
+        <h3>Мы идем на вечеринку!</h3>
+        <h4>И ты приглашен</h4>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
     </div>
 </body>
 </html>
